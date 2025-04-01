@@ -52,7 +52,7 @@ def wish():
     else:
         reply("Good Evening!")  
         
-    reply("I am Proton, how may I help you?")
+    reply("I am JARVIS, how may I help you?")
 
 # Set Microphone parameters
 with sr.Microphone() as source:
@@ -80,7 +80,7 @@ def record_audio():
 def respond(voice_data):
     global file_exp_status, files, is_awake, path
     print(voice_data)
-    voice_data.replace('proton','')
+    voice_data.replace('jarvis','')
     app.eel.addUserMsg(voice_data)
 
     if is_awake==False:
@@ -93,7 +93,7 @@ def respond(voice_data):
         wish()
 
     elif 'what is your name' in voice_data:
-        reply('My name is Proton!')
+        reply('My name is Jarvis!')
 
     elif 'date' in voice_data:
         reply(today.strftime("%B %d, %Y"))
@@ -237,7 +237,7 @@ while True:
         voice_data = record_audio()
 
     #process voice_data
-    if 'proton' in voice_data:
+    if 'jarvis' in voice_data:
         try:
             #Handle sys.exit()
             respond(voice_data)

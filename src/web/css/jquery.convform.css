@@ -140,7 +140,7 @@ div.conv-form-wrapper  div#messages div.message {
     word-wrap: break-word;
 }
 div.conv-form-wrapper  div#messages div.message.to {
-    background: linear-gradient(to right, #388eff 29%, #70aeff 81%);
+    background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
     color: #fff;
     float: left;
     border-top-left-radius: 0;
